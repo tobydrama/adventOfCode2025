@@ -3,7 +3,7 @@ import java.io.File
 import kotlin.math.abs
 
 fun main(){
-    //dayFourTaskOne(File("day4.txt").readLines())
+    dayFourTaskOne(File("day4.txt").readLines())
     dayFourTaskTwo(File("day4.txt").readLines())
 }
 
@@ -40,7 +40,7 @@ fun dayFourTaskTwo(input:List<String>){
         println()
     }
 
-    println("The total number of rolls of paper that the forklift can access is  ${grid.flatten().filter { it.symbol == 'X' }.size}")
+    println("Part 2: The total number of rolls of paper that the forklift can access is  ${grid.flatten().filter { it.symbol == 'X' }.size}")
 
 }
 
@@ -70,7 +70,7 @@ fun dayFourTaskOne(input:List<String>){
         println()
     }
 
-    println("The total number of rolls of paper that the forklift can access is  ${grid.flatten().filter { it.symbol == 'X' }.size}")
+    println("Part 1: The total number of rolls of paper that the forklift can access is  ${grid.flatten().filter { it.symbol == 'X' }.size}")
 }
 
 fun checkAroundPart2(coord: coordinate, grid: MutableList<MutableList<coordinate>>): Int {
