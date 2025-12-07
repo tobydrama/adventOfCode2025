@@ -3,7 +3,7 @@ import java.io.File
 import kotlin.math.abs
 
 fun main(){
-    //dayFiveTaskOne(File("day5.txt").readLines())
+    dayFiveTaskOne(File("day5.txt").readLines())
     dayFiveTaskTwo(File("day5.txt").readLines())
 }
 
